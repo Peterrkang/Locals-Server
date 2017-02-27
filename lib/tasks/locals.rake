@@ -3,8 +3,7 @@ namespace :locals do
     desc 'Update events'
     task update: :environment do
       # check if there are already events made
-      Event.where('created_at < ?', Time.new - 4.hours)
-      end
+      Event.where('created_at < ?', Time.new - 4.hours).destroy_all
     end
   end
 end
