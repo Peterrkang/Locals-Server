@@ -1,8 +1,7 @@
 class EventsController < ApplicationController
 
   def index
-    @current_time = Time.new
-    events = Event.where("created_at - @current_time > 4")
+    events = Event.where("created_at > ?", Time.new - 4.hours)
     render json: events
   end
 
