@@ -3,7 +3,7 @@ class ChatroomController < ApplicationController
   def show
     chat = ChatRoom.find(params[:id])
     user = @current_user.email
-    render json: {messages: chat.messages, user: user}
+    render json: {messages: chat.messages, user: user, title: chat.title}
   end
 
   def message
