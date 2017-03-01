@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get 'events/:id/chatroom', to: 'chatroom#show'
   post 'events/:id/chatroom', to: 'chatroom#message'
 
-
+  root 'events#index'
 end

@@ -2,6 +2,7 @@ class EventsController < ApplicationController
 
   def index
     events = Event.where("created_at > ?", Time.new - 4.hours)
+    puts events
     render json: events
   end
 
