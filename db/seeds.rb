@@ -9,9 +9,9 @@
 User.create(email: "lmnop", password: "123")
 User.create(email: "peas", password: "123")
 Event.create(title: "RockClimb", description: "Climb The World", address: "Anaheim, CA", lat: "33.835293",
-lng: "-117.914505", user_id: 1, showInfo: false)
+lng: "-117.914505", user_id: 1)
 Event.create(title: "Swim", description: "Swim Now", address: "Cerritos, CA", lat: "33.8583",
-lng: "118.0648", user_id: 2, showInfo: false)
+lng: "118.0648", user_id: 2)
 ChatRoom.create(user_id: 1, event_id: 1, title: "RockClimb")
 ChatRoom.create(user_id: 2, event_id: 2, title: "Swim Now")
 

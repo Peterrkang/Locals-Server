@@ -7,7 +7,6 @@ class CreateEvents < ActiveRecord::Migration[5.0]
       t.string :lng
       t.string :lat
       t.integer :user_id
-      t.boolean :showInfo
 
 
       t.timestamps

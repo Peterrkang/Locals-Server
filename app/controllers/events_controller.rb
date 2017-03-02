@@ -2,13 +2,12 @@ class EventsController < ApplicationController
 
   def index
     events = Event.where("created_at > ?", Time.new - 4.hours)
-    puts events
     render json: events
   end
 
-  def create
+  def new
     event = Event.create(title: params[:title], description: params[:description], address: params[:address], lat: params[:lat],
-    lng: params[:lng], user_id: @current_user.id, showInfo: false)
+    lng: params[:lng], user_id: @current_user.id)
     chatroom = ChatRoom.create(title: params[:title], user_id: @current_user.id, event_id: event.id)
     if event && chatroom
       render json: { event: event }, status: 200

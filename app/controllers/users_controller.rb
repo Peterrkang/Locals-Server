@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_request
 
-  def create
+  def new
     if User.find_by_email(params[:email])
       render json: { error: "User already exist", status: 422 }, status: 422
     else

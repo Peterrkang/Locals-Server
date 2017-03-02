@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20161217222248) do
     t.string   "lng"
     t.string   "lat"
     t.integer  "user_id"
-    t.boolean  "showInfo"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
