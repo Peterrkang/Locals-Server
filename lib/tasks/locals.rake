@@ -4,11 +4,11 @@ namespace :locals do
     desc 'Update events'
     task update: :environment do
       # check if there are already events made
-      events = Event.where('created_at < ?', Time.new - 4.hours)
+      events = Event.where('created_at < ?', Time.new)
       events.each do |event|
         event.chat_room.destroy
+        event.destroy
       end
-      events.destroy_all
     end
 
     desc 'Pull Events'

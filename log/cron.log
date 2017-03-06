@@ -10,3 +10,46 @@
 /Users/Peterrkang/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
 /Users/Peterrkang/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
 /Users/Peterrkang/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is deprecated
+rake aborted!
+ActiveRecord::StatementInvalid: SQLite3::BusyException: database is locked: INSERT INTO "events" ("title", "description", "address", "lng", "lat", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:16:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+SQLite3::BusyException: database is locked
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:16:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+Tasks: TOP => locals:events:pull
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `destroy' for nil:NilClass
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:9:in `block (4 levels) in <top (required)>'
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:8:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+Tasks: TOP => locals:events:update
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `destroy' for nil:NilClass
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:9:in `block (4 levels) in <top (required)>'
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:8:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+Tasks: TOP => locals:events:update
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `destroy' for nil:NilClass
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:9:in `block (4 levels) in <top (required)>'
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:8:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+Tasks: TOP => locals:events:update
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `destroy' for nil:NilClass
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:9:in `block (4 levels) in <top (required)>'
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:8:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+Tasks: TOP => locals:events:update
+(See full trace by running task with --trace)
