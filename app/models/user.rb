@@ -6,6 +6,6 @@ class User < ApplicationRecord
   has_many :messages
   has_many :chat_rooms, through: :messages
 
-  validates :email, uniqueness: { case_sensitive: false }
+  validates :email, uniqueness: { case_sensitive: false }, :password
 
 end

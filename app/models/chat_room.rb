@@ -3,4 +3,6 @@ class ChatRoom < ApplicationRecord
   has_many :messages
   has_many :users, through: :messages
 
+  validates :user_id, :event_id, :title
+
 end
