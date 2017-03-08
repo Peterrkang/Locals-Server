@@ -3,7 +3,6 @@ namespace :locals do
 
     desc 'Update events'
     task update: :environment do
-      # check if there are already events made
       events = Event.where('created_at < ?', Time.new - 4.hours)
       events.each do |event|
         chat = ChatRoom.find_by(event_id: event.id)

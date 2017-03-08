@@ -8,7 +8,8 @@ class ChatroomController < ApplicationController
 
   def message
     user = User.find(@current_user.id)
-    Message.create(content: params[:message], chat_room_id: params[:id], user_id: user.id, user_email: user.email)
+    chat = ChatRoom.find_by(event_id: params[:id])
+    Message.create(content: params[:message], chat_room_id: chat.id, user_id: user.id, user_email: user.email)
   end
 
 end
