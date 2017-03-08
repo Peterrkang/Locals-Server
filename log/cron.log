@@ -53,3 +53,11 @@ NoMethodError: undefined method `destroy' for nil:NilClass
 /Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
 Tasks: TOP => locals:events:update
 (See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `destroy' for nil:NilClass
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:9:in `block (4 levels) in <top (required)>'
+/Users/Peterrkang/Desktop/Locals-Server/lib/tasks/locals.rake:8:in `block (3 levels) in <top (required)>'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `load'
+/Users/Peterrkang/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'
+Tasks: TOP => locals:events:update
+(See full trace by running task with --trace)
