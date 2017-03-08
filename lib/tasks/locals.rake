@@ -7,8 +7,8 @@ namespace :locals do
       events = Event.where('created_at < ?', Time.new)
       events.each do |event|
         event.chat_room.destroy
-        event.destroy
       end
+      events.destroy_all
     end
 
     desc 'Pull Events'
